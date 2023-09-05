@@ -12,6 +12,8 @@ int *bubbleSort(int arr[], int number_of_elements)
         {
             if (arr[j] > arr[j + 1]) 
             {
+                // If number is greater than j 
+                // swap and continue sorting
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
