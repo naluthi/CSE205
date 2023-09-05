@@ -8,16 +8,18 @@ int *bubbleSort(int arr[], int number_of_elements)
 {
     for (int i = 0; i < number_of_elements - i; i++) 
     {
-        for (int j = 0; j < number_of_elements - i - 1; j++)
-        if (arr[j] > arr[j + 1]) {
-            int temp = arr[j];
-            arr[j] = arr[j + 1];
-            arr[j + 1] = temp;
+        for (int j = 0; j < number_of_elements - i - 1; j++) 
+        {
+            if (arr[j] > arr[j + 1]) 
+            {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
         }
     }
     return arr;
 }
-
 
 
 // Function to print array. Array is called by reference
@@ -28,7 +30,6 @@ void print_array(int arr[], int number_of_elements)
 
     cout << endl;
 }
-
 
 
 int main() 
@@ -47,4 +48,3 @@ int main()
 
     return 0;
 }
-
