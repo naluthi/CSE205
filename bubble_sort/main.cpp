@@ -6,7 +6,7 @@ using namespace std;
 // Bubble Sort
 int *bubbleSort(int arr[], int number_of_elements) 
 {
-    for (int i = 0; i < number_of_elements - i; i++) 
+    for (int i = 0; i < number_of_elements - 1; i++) 
     {
         for (int j = 0; j < number_of_elements - i - 1; j++)  
         {
